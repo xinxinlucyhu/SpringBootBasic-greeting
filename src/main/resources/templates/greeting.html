@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/greeting.css}" rel="stylesheet" />
+</head>
+
+
+<body>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://cdn.pixabay.com/photo/2019/09/23/11/43/bird-4498326_1280.jpg" height= 200px; width= 280px; class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Welcome</h5>
+    <p class="card-text"  th:text="'Hello, ' + ${name} + '!'" />
+     
+    <a href="/form" class="btn btn-primary">Check it out</a>
+  </div>
+</div>
+    
+    
+    
+</body>
+
+
+</html>
